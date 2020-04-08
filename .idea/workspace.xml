@@ -2,10 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="759421ba-8f5c-409f-ab11-6d79a6d7881d" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/catalogapp/tests/test_models.py" beforeDir="false" afterPath="$PROJECT_DIR$/catalogapp/tests/test_models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/catalogapp/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/catalogapp/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/catalogapp/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/catalogapp/views.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -153,6 +151,7 @@
   <component name="UnknownFeatures">
     <option featureType="com.intellij.fileTypeFactory" implementationName="*.css" />
     <option featureType="com.intellij.fileTypeFactory" implementationName="*.ini" />
+    <option featureType="com.intellij.fileTypeFactory" implementationName="requirements.txt" />
   </component>
   <component name="WindowStateProjectService">
     <state x="137" y="19" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1586299298938">
