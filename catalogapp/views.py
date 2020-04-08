@@ -1,5 +1,6 @@
 from django.shortcuts import render
 from catalogapp.models import Book, Author, BookInstance, Genre
+from django.views import generic
 
 
 def index(request):
@@ -14,9 +15,11 @@ def index(request):
 
     # The 'all()' is implied by default.
     num_authors = Author.objects.count()
-    id = Author.objects.get(id=1)
-    print(id)
-    field_label = id._meta.get_field('first_name').verbose_name
+    record = Author.objects.filter(id=4)
+    print(record)
+    print(type(record))
+    print(record)
+    field_label = record.get_field('first_name').verbose_name
     print(field_label)
     context = {
         'num_books': num_books,
@@ -28,5 +31,11 @@ def index(request):
     # Render the HTML template index.html with the data in the context variable
     return render(request, 'index.html', context=context)
 
+
+class BookListView(generic.ListView):
+    model = Book
+#   context_object_name = 'book_list'  # your own name for the list as a template variable
+    queryset = Book.objects.filter(title__icontains='war')[:5]  # Get 5 books containing the title war
+#   template_name = 'books/my_arbitrary_template_name_list.html'  # Specify your own template name/location
 
 
